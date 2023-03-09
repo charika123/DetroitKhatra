@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Members</title>
+        <link rel="stylesheet" href="menustyle.css">
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: black;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 10em;
+    margin-top: -20px;
+    margin-bottom: 80px;
+    letter-spacing: 16px;
+    mix-blend-mode: difference;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.4em;
+}
+#members {
+    margin-left: 3%;
+    margin-top: -11%;
+    height: 80vh;
+}
+.container{
+    display: flex;
+}
+.people-1{
+    margin-left: 3%;
+}
+.people-2{
+    margin-left: 4%;
+}
+
+.menu{
+    width: 100px;
+    height: 120px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href = "index.html">HOME</a>
+                <a href = "Board.html">LEADERS</a>
+                <a href = "Performances.html">PERFORMANCES</a>
+                <a href = "Gallery.html">GALLERY</a>
+                <a href = "ContactUs.html">CONTACT US</a>
+            </div>
+          </div>
+          <span onclick="openNav()"> 
+            <div class="menu-icon">
+            <img class = "menu" src = "logo.png">
+            </div>
+          </span>
+        <h1>MEMBERS</h1>
+        <div class = "container">
+        <p class = "people-1">Advaith Bommisetty<br>Prabhnoor Ghariyal<br>Pradeep Kashyap<br>Prashant Kashyap<br>Tajratan Deol<br>Deepkaran Brar<br>Arun Varghese<br>Amisha Singh<br>Kunal Sinha<br>Mo Sobh<br>Arianna Cesario<br>Aleena Tony<br>Anish Raval<br></p>
+        <img id = "members" src = "members.jpg">
+        <p class = "people-2">Autumn<br>Aarvind Saranvanan<br>Issac Varghese<br>Lokesh Hadagali<br>Tamanna Pandita<br>Tharunika Vasudevan<br>Keshav Nair<br>Neha Reuben<br>Pranav Chetan<br>Pranav Chinniah<br>Samiksha Sneha<br>Tharunika Vasudevan<br>Vy Hoang<br></p>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>
