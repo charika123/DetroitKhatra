@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detroit Khatra</title>
+    <link rel="stylesheet" href="menustyle.css">
+    <link rel="stylesheet" href="DKStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href = "Board.html">LEADERS</a>
+            <a href = "Performances.html">PERFORMANCES</a>
+            <a href = "Gallery.html">GALLERY</a>
+            <a href = "ContactUs.html">CONTACT US</a>
+        </div>
+      </div>
+      <span onclick="openNav()"> 
+        <div class="menu-icon">
+        <img class = "menu" src = "menu.png">
+        </div>
+      </span>
+  <section>
+    <video class="background-video" autoplay loop muted poster="StaticImage.jpg">
+        <source src="background.mp4" type="video/mp4">
+        </video>
+    <div class="heading">
+        <h1 id = "detroit">DETROIT</h1>
+        <img id = "logo" src = "logo.png" style="width: 47%;">
+        <h1 id = "khatra">KHATRA</h1>
+    </div>
+
+    <div class="intro">
+        <div class="intro-text">
+          <p class="hide">
+            <span class="text">A STORM</span>
+          </p>
+          <p class="hide">
+            <span class="text">IS COMING...</span>
+          </p>
+        </div>
+      </div>
+      <div class="slider"></div>
+</section>
+
+<center><h2 class = "aboutUsHeading">ABOUT US</h2></center>
+<img src = "2022.PNG" class = "picture2022" width = "100%">
+<center>
+    <div class = "content">
+    <p class = "aboutUsContent"
+    style =
+    "height: 500px;
+    padding-top: 10%;
+    padding-bottom:0%;
+    width:90%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.6629026610644257) 14%, rgba(0,0,0,0.7833508403361344) 17%, rgba(0,0,0,1) 31%);"
+    >    
+    Detroit Khatra is Michigan's newest bollywood-fusion dance team formed from the former talents of WSU Jhatka
+    and Detroit Kohinoor that's based out of Detroit, MI. Composed of students from the Wayne State
+    and metro Detroit area, Detroit Khatra strives to push the creative limits of various dance styles (including bollywood,
+    bhangra, hip hop, classical, contemporary, and more) to create a beautiful fusion of dance that illustrates
+    not only a story, but a message as well.
+    </p>
+</center>
+</div>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+crossorigin=></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+
+const tl = gsap.timeline({defaults: {ease: "power1.out"}});
+tl.to(".text", {y: "0%", duration: 1, stagger: 0.25});
+tl.to(".slider", {y: "-100%", duration: 1.5, delay: 0.5});
+tl.to(".intro", {y: "-100%", duration: 1}, "-=1");
+tl.fromTo(".heading", {opacity: 0}, {opacity: 1, duration: 0.8});
+tl.fromTo(".background-content", {opacity: 0}, {opacity: 1, duration: 0.6}, '-=1');
+
+window.addEventListener('scroll', function(){
+  const AboutUsHeading = document.querySelector('.aboutUsHeading');
+  const AboutUsContent = document.querySelector('.aboutUsContent');
+  let scrollPositionY = window.pageYOffset;
+  AboutUsHeading.style.transform = 'translateY(' + scrollPositionY * 0.32 + 'px)';
+  AboutUsContent.style.transform = 'translateY(' + scrollPositionY * -0.15 + 'px)';
+});
+</script>
+</body>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href = "performancesstyle.css">
+        <link rel="stylesheet" href="menustyle.css">
+        <style>
+            .khatrabutton{
+                border-radius: 0px;
+                border: solid 18px;
+                width: 35%;
+                height: 50%;
+                box-shadow: none;
+                padding: 20px;
+            }
+            .khatrabutton1:hover{
+               background: url("Khatra1button.jpg")
+            }
+            .khatrabutton2:hover{
+                background: url("Khatra2button.png");
+            }
+            .button-container button{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="myNav" class="overlay">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+            <div class="overlay-content">
+                <a href = "index.html">HOME</a>
+                <a href = "Board.html">LEADERS</a>
+                <a href = "Gallery.html">GALLERY</a>
+                <a href = "ContactUs.html">CONTACT US</a>
+            </div>
+          
+          </div>
+           
+  <span onclick="openNav()"> 
+    <div class="menu-icon">
+        <img class = "menu" src = "logo.png" style = "width: 5.5%; height: 12%;">
+    </div>
+  </span>
+        <h1>PERFORMANCES</h1>
+        <center>
+            <div class = "button-container">
+                <a href="Hercules.html"><button class = "khatrabutton khatrabutton1" style = "font-size: 100px;">KHATRA 1.0</button></a>
+                <a href="Disney+.html"><button class = "khatrabutton khatrabutton2"  style = "font-size: 100px;">KHATRA 2.0</button></a>
+            </div>
+        </center>
+        <script src="script.js"></script>
+    </body>
+</html>  
