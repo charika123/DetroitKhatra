@@ -1,6 +1,7 @@
 # Detroit Khatra
 My first ever website!  
-A multipage website created using HTML and CSS made as the final project for my Intro to Web Technology class.  
+A multipage website created for Wayne State University's Bollywood fusion competitive dance team, Detroit Khatra.   
+Created using HTML and CSS made as the final project for my Intro to Web Technology class.  
 Remade using code from other users and added functionalities, animations, and parallax scrolling.
 
 
